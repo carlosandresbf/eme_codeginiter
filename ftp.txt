@@ -1,0 +1,18 @@
+
+
+Servidor:            www.emepropiedadraiz.co
+
+Type:                  ssh
+
+User:                  usr_eme
+
+Password:          2m2pr4p32d1d
+
+Port:                   22
+
+DB
+
+//179.50.4.68/dbpaco
+pacoeme
+propiedad1
+ 

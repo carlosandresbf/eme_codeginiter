@@ -1,3 +1,4 @@
+
 <div id="page-content-search">
 			<div class="wide_container_2">
 				<div class="tabs colored_tabs">
@@ -219,9 +220,7 @@
                                                                         </div>
                                                                         <div class="select-block no-border pull-right col-sm-2 col-xs-12">
                                                                             <select  id="select_order_filter"       placeholder="Ordenar por:"   class="selection input-tags" >
-                                                                                                                                                             <option value="">Ordernar por:</option>
-
-                                                                                
+                                                                              
                                                                                 <option value="VAL_OFE DESC">Mayor precio</option>
                                                                                 <option  value="VAL_OFE ASC">Menor precio</option>
                                                                             </select>
@@ -274,11 +273,11 @@
                                                                                 Agente encargado<br>
                                                                                 <span>Rodrigo Romero C</span>
                                                                             </div> -->
-                                                                            <div class="compare boton-compare" data-compare-state="empty">
+                                                                            <div class="compare boton-compare" data-compare-state="empty" data-property="<?php echo $item->COD_INM ?>">
                                                                                 <span class="plus-add">Comparar</span>
                                                                                 <p class="fav-text"></p>
                                                                             </div>
-                                                                            <a href="comparar.php" class="btn btn-primary link-compare">Comparar</a>
+                                                                            <a href="javascript:void(0)" class="btn btn-primary link-compare">Comparar</a>
                                                                             <div class="house_price">Canon: $<?php echo number_format($item->VAL_OFE)?></div>
                                                                         </div>
                                                                     </div>
@@ -577,6 +576,28 @@
          <script type="text/javascript">  
 		 $(document).ready(function(e) {
 			 
+alert('his'+$('.compare').length);
+        $(document).on('click', '.link-compare', function(event){
+            window.location.href = "arrendamientos/comparar";
+              });
+
+        $(document).on('click', '.compare', function(event) { 
+            event.preventDefault();
+            var property = $(this).data('property');
+
+            if ($(this).hasClass('compare-added')){
+                url = 'comparar_remove';
+            }else{
+                url = 'comparar_add';
+         $.ajax({
+              url: <?php echo  base_url()?>+'arrendamientos/'+url,
+              type: 'POST',
+              data: {property: property }
+            }).done(function() {});
+                            }
+        });
+
+             
 			       
         $('.input-tags').selectize({
             plugins: ['remove_button'],

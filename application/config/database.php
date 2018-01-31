@@ -6,7 +6,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '179.50.4.68',
+	'hostname' => '(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 179.50.4.94)(PORT = 1521)) (CONNECT_DATA = (SERVICE_NAME = dbpaco.paco.com.co) (SID = dbpaco)))',//'179.50.4.68' > SN  dbpaco, 179.50.4.94 > SN dbpaco.paco.com.co
 	'username' => 'PACOEME',
 	'password' => 'propiedad1',
 	'database' => 'dbpaco',

@@ -92,6 +92,39 @@ class Arrendamientos extends CI_Controller {
 						
 						
 											}
-	
-	
+
+
+public function comparar_add(){
+
+		$item = $this->input->post('property');
+		$comparative = $this->session->userdata('property_rent');
+		if (empty($comparative)){
+			$comparative = array();
+		}
+		if(in_array($item, $comparative)){
+
+		}else{
+			array_shift($comparative);
+			array_values($comparative);
+			array_push($comparative, $item);
+			$this->session->set_userdata('property_rent', $comparative);
+		}
 }
+
+public function comparar_remove(){
+		$item = $this->input->post('property');
+		$comparative = $this->session->userdata('property_rent');
+		if (empty($comparative)){
+	
+		} if(in_array($item, $comparative)){
+
+		if (($key = array_search($item, $comparative)) !== false) {
+		    unset($comparative[$key]);
+		}
+			array_values($comparative);
+			$this->session->set_userdata('property_rent', $comparative);
+		}
+
+}
+
+}			

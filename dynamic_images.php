@@ -9,8 +9,10 @@ public $error = '';
 public $result ='';
 
 function __construct() {
-	$this->conection =  oci_connect('pacoeme', 'propiedad1', '//179.50.4.68/dbpaco'); 
+	//oci_connect($username, $password, '(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.3.14)(PORT = 1521)) (CONNECT_DATA = (SERVICE_NAME = ORCL) (SID = ORCL)))');
+	$this->conection =  oci_connect('pacoeme', 'propiedad1', '(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 179.50.4.94)(PORT = 1521)) (CONNECT_DATA = (SERVICE_NAME = dbpaco.paco.com.co) (SID = dbpaco)))'); //179.50.4.94/dbpaco
 if (!$this->conection) {
+	echo "neil";
     $this->error = oci_error();
     trigger_error(htmlentities($this->error['message'], ENT_QUOTES), E_USER_ERROR);
 } 

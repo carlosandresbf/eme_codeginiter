@@ -14,29 +14,25 @@
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
 			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 			  crossorigin="anonymous"></script><?php */?>
-              <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
+              <script src="<?=base_url()?>assets/js/jquery-1.10.2.min.js"></script>
   
+  <script type="text/javascript" src="<?=base_url()?>assets/js/jquery-migrate-1.2.1.min.js"></script>
               
-	<script type="text/javascript" src="<?=base_url()?>assets/js/jquery-migrate-1.2.1.min.js"></script>
-    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABEhYfOT1RPWMJcFMxPO26YCKFCqhKapM&v=3&libraries=places&callback=initialize"></script>
     <script type="text/javascript" src="<?=base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/bootstrap-select.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/jquery.placeholder.js"></script>
-	<script type="text/javascript" src="<?=base_url()?>assets/js/infobox.js"></script>
+	
 	<script type="text/javascript" src="<?=base_url()?>assets/js/retina-1.1.0.min.js"></script>
-	<script type="text/javascript" src="<?=base_url()?>assets/js/masonry.pkgd.min.js"></script>
-	<script type="text/javascript" src="<?=base_url()?>assets/js/waypoints.min.js"></script>
+	<?php /*?><script type="text/javascript" src="<?=base_url()?>assets/js/infobox.js"></script><script type="text/javascript" src="<?=base_url()?>assets/js/masonry.pkgd.min.js"></script><?php /*?>
+	 <script type="text/javascript" src="<?=base_url()?>assets/js/waypoints.min.js"></script><?php */?>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/selectize.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/tmpl.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/icheck.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/jquery.dependClass-0.1.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/draggable-0.1.js"></script>
-	<script type="text/javascript" src="<?=base_url()?>assets/js/markerwithlabel_packed.js"></script>
+	   <?php /*?> <script type="text/javascript" src="<?=base_url()?>assets/js/markerwithlabel_packed.js"></script><?php */?>
 	<script type="text/javascript" src="<?=base_url()?>assets/js/jquery.slider.js"></script>
 
 	<script type="text/javascript" src="<?=base_url()?>assets/js/custom-map.js"></script>

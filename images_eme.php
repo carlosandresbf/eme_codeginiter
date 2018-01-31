@@ -1,4 +1,5 @@
-<?php require_once('dynamic_images.php');
+<?php require_once('dynamic_images.php'); 
+
 $class = new image_manager();
 
 if(strtolower(filter_input(INPUT_GET, 'type_img', FILTER_SANITIZE_MAGIC_QUOTES))=='imagen_proyecto_code')

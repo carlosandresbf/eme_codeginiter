@@ -451,7 +451,7 @@ $(window).load(function(){
     }
 
     //Masonry grid init
-    function triggerMasonry() {
+   /* function triggerMasonry() {
         if ( !$grid ) { return; }
         $grid.masonry({
             itemSelector: '.grid-item'
@@ -459,7 +459,7 @@ $(window).load(function(){
     }
 
     $grid = $('.grid');
-    triggerMasonry();
+    triggerMasonry();*/
     
     // Owl Carousel
     // Disable click when dragging
